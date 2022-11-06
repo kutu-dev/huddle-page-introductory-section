@@ -28,6 +28,17 @@ html, body {
   min-height: -webkit-fill-available;
 }
 
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
 body {
   background: url(../images/bg-mobile.svg), var(--violet) no-repeat;
   background-position: top left;
