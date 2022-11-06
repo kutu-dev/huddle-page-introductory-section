@@ -47,6 +47,15 @@ body {
   flex-direction: column;
 }
 
+@media only screen and (min-width: 700px) {
+  body {
+    background: url(../images/bg-desktop.svg), var(--violet) no-repeat;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -56,15 +65,23 @@ a {
   padding: 3rem;
 }
 
+@media only screen and (min-width: 700px) {
+  .header {
+    padding: 6rem;
+  }
+}
+
 .header__img {
   height: 5rem;
 }
 
 @media only screen and (min-width: 700px) {
   .main {
-    margin-left: 3rem;
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 6rem;
+    gap: 6rem;
   }
 }
 
@@ -76,7 +93,6 @@ a {
 @media only screen and (min-width: 700px) {
   .main__img {
     padding: 0;
-    max-width: 50vw;
   }
 }
 
@@ -89,7 +105,7 @@ a {
 @media only screen and (min-width: 700px) {
   .main__text {
     text-align: left;
-    padding-right: 10vw;
+    padding: 0;
   }
 }
 
@@ -103,7 +119,8 @@ a {
 
 @media only screen and (min-width: 700px) {
   .main__title {
-    font-size: 6rem;
+    max-width: 80%;
+    font-size: 5rem;
     line-height: 1.5em;
   }
 }
@@ -116,24 +133,18 @@ a {
 
 @media only screen and (min-width: 700px) {
   .main__description {
-    font-size: 2.5rem;
-    line-height: 1.4em;
+    max-width: 90%;
+    font-size: 1.7rem;
   }
 }
 
 .main__button {
   padding: 1.5rem;
   width: 70%;
-  max-width: 25rem;
+  max-width: 20rem;
   border-radius: var(--border-radius);
   color: var(--violet);
   box-shadow: 3px 3px 5px var(--black);
-}
-
-@media only screen and (min-width: 700px) {
-  .main__button {
-    font-size: 2rem;
-  }
 }
 
 .main__button:hover, .main__button:focus {
@@ -145,19 +156,12 @@ a {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1.5rem;
   height: 100%;
   flex-grow: 1;
   margin-block: 2rem;
-}
-
-@media only screen and (min-width: 700px) {
-  .footer {
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-right: 10rem;
-  }
+  margin-right: 7vw;
 }
 
 .footer__social-media-link {
