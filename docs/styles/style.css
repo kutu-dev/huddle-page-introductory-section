@@ -53,6 +53,7 @@ body {
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: space-around;
   }
 }
 
@@ -158,8 +159,6 @@ a {
   align-items: center;
   justify-content: flex-end;
   gap: 1.5rem;
-  height: 100%;
-  flex-grow: 1;
   margin-block: 2rem;
   margin-right: 7vw;
 }
