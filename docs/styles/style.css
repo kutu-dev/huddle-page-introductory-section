@@ -57,7 +57,7 @@ a {
 }
 
 .header__img {
-  height: 4rem;
+  height: 5rem;
 }
 
 @media only screen and (min-width: 700px) {
@@ -69,9 +69,8 @@ a {
 }
 
 .main__img {
-  max-width: 100%;
-  padding: 3rem;
-  max-height: 75vh;
+  width: 100%;
+  padding-inline: 3rem;
   object-fit: contain;
 }
 
