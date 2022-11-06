@@ -52,7 +52,8 @@ a {
 }
 
 .header {
-  padding: 3rem;
+  padding-block: 3rem;
+  padding-inline: 6.75rem;
   width: 100%;
 }
 
@@ -70,7 +71,8 @@ a {
 
 .main__img {
   width: 100%;
-  padding-inline: 3rem;
+  padding: 3rem;
+  max-height: 75vh;
   object-fit: contain;
 }
 
@@ -82,7 +84,7 @@ a {
 
 @media only screen and (min-width: 700px) {
   .main__text {
-    max-width: 40%;
+    max-width: 50%;
     text-align: left;
   }
 }
