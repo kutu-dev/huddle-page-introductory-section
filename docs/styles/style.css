@@ -18,14 +18,12 @@ html {
   box-sizing: border-box;
   font-size: var(--font-size);
   font-family: 'Open Sans', sans-serif;
-  color: var(--white)
+  color: var(--white);
 }
 
 html, body {
   width: 100%;
   min-height: 100vh;
-  /* Fix all problems related to the navigation bar in webkit based mobile browsers */
-  min-height: -webkit-fill-available;
 }
 
 .sr-only {
@@ -105,7 +103,7 @@ a {
 
 @media only screen and (min-width: 700px) {
   .main__title {
-    font-size: 4rem;
+    font-size: 6rem;
     line-height: 1.5em;
   }
 }
@@ -116,13 +114,26 @@ a {
   line-height: 2.5rem;
 }
 
+@media only screen and (min-width: 700px) {
+  .main__description {
+    font-size: 2.5rem;
+    line-height: 1.4em;
+  }
+}
+
 .main__button {
   padding: 1.5rem;
   width: 70%;
-  max-width: 20rem;
+  max-width: 25rem;
   border-radius: var(--border-radius);
   color: var(--violet);
   box-shadow: 3px 3px 5px var(--black);
+}
+
+@media only screen and (min-width: 700px) {
+  .main__button {
+    font-size: 2rem;
+  }
 }
 
 .main__button:hover, .main__button:focus {
@@ -144,6 +155,7 @@ a {
 @media only screen and (min-width: 700px) {
   .footer {
     justify-content: flex-end;
+    align-items: flex-end;
     margin-right: 10rem;
   }
 }
