@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/kutu-dev/product-preview-card-component)
-- Live Site URL: [GitHub Pages](https://kutu-dev.github.io/product-preview-card-component/)
+- Solution URL: [GitHub Repository](https://github.com/kutu-dev/huddle-page-introductory-section)
+- Live Site URL: [GitHub Pages](https://kutu-dev.github.io/huddle-page-introductory-section/)
 
 ### Screenshot
 
